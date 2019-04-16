@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/1.png" />
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <div class="row justify-content-between align-items-start bg-light">
+       <div class="col-sm-3 ">
+            <div class="input-group d-flex align-items-center bg-secondary">
+                    <div class="input-group-prepend px-2 ">
+                      <span class="input-group-text bg-secondary" id="basic-addon1"><i class="fas fa-search"></i></span>
+                    </div>
+                    <input type="text" id="search" class="form-control bg-secondary" placeholder="Search">
+                  </div>
+
+       </div>
+       <div class="col-sm-1 ">
+           <img src="img/cat.jfif" class="w-50 rounded-circle " alt="">
+           
+
+
+       </div>
+   </div> 
+   <div class="row justify-content-start align-content-center">
+       <div class="col-sm-3"  >
+            <ul class="nav flex-column bg-dark py-5 px-3 " >
+                  <li class="nav-item"><p class="text-center"><i class="fas fa-home pr-1"></i></p>
+                     <a class="nav-link active text-center" href="#">Home </a>
+                    </li>
+
+                    
+                      <li class="nav-item"><p class="text-center"><i class="fab fa-typo3 pr-1"></i></p>
+                          <p class="text-center"><a class="nav-link" href="#"> Prototype</a></p>
+                        </li>
+
+                        <li class="nav-item">
+                          <p class="text-center"><i class="fas fa-calendar-alt pr-1"></i></p>
+                            <p class="text-center"><a class="nav-link" href="#"> Schedule</a></p>
+                          </li>
+
+                          <li class="nav-item">
+                            <p class="text-center"><i class="fas fa-tasks pr-1"></i></p>
+                              <p class="text-center"><a class="nav-link" href="#"> Task</a></p>
+                            </li>
+
+
+                            <li class="nav-item">
+                              <p class="text-center">
+                             <i class="fas fa-comments pr-1"> </i>
+                                <a class="nav-link" href="#"> Communiction</a></p>
+                              </li>
+         </ul>         
+       </div>
+       <div class="col-sm-9 pl-0">
+           
+            <div class="row bg-dark py-3 align-items-center">
+                <div class="col-sm-9">
+                        <div class="form-check ">
+                                <label class="form-check-label pr-3">
+                                        <input class="form-check-input" type="radio" name="exampleRadios">
+                                        <span class="circle">
+                                                <span class="check"></span>
+                                                </span> Task
+                                       
+                                      </label>                              
+                                        <label class="form-check-label pr-3">
+                                            <input class="form-check-input" type="radio" name="exampleRadios"> 
+                                            <span class="circle">
+                                                    <span class="check"></span>
+                                                  </span>Story
+                                            
+                                          </label>
+                                          <label class="form-check-label pr-3">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"> <span class="circle">
+                                                  <span class="check"></span>
+                                                </span>Bug
+                                                
+                                              </label>
+                                              <label class="form-check-label pr-3">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios">
+                                                    <span class="circle">
+                                                            <span class="check"></span>
+                                                          </span> Epic
+                                                   
+                                                  </label>
+                        </div>
+                </div>
+                <div class="col-sm-3" id="btn">
+                    <button class="btn btn-secondary"> new task</button>
+                </div>
+            </div>
+            <div class="row justify-content-start align-items-center">
+                <div class="col-sm-5">
+                    <form>
+                        <div class="form-row align-items-center">
+                          <div class="col-sm-auto">
+                            <input type="text" class="form-control mb-2" id="text"  placeholder="Activity E.g Eating">
+                          </div>
+                          </form> 
+                          </div>
+                            <div class="col-sm-7">
+                              <p>current project </p>
+                              <label id="hours">00</label>
+                              <span class='sep'>:</span>         <!-- for the colon between numbers -->
+                              <label id="minutes">00</label>
+                              <span class='sep'>:</span>
+                              <label id="seconds">00</label>
+                            
+                            <!-- last project duration -->
+                            <p>Last Project</p>
+                                <label id="h">00</label>
+                                <span class='sep'>:</span> 
+                                <label id="m">00</label>
+                                <span class='sep'>:</span> 
+                                <label id="s">00</label>
+                                <label id="lap"></label> 
+                                
+                             
+                          
+                              <!-- controling buttons -->
+                               <div class="container " id="con">
+                                 <button onclick='set()' id='strt' class='button'>START</button>
+                                  <button onclick='stop()' id='play' class='button'>PAUSE / PLAY</button>
+                                  <button onclick='done()' id='clr' class='button'>DONE</button>
+                                </div> 
+                                <div class="row justify-content-around align-items-center">
+                                  <div class="col-sm-12">
+                                 <b>Task duration</b>
+                                  <div id="listcontainer"></div></div>
+                                
+                                </div>             
+               </div>
+               
+            </div>
+            
+            
+
+       </div>
+   </div>
+   <script src="main.js"></script>
+</body>
+</html>
